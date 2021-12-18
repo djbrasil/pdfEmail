@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+<head> 
+  {% include 'base/_head.html' %}
+</head> 
+<body>
+  <div class="container p-5 mt-5">   
+      <span>Tabela: </span><a href="{% url 'table' %}">Acessar</a>   
+        {% block main_content %} 
+        {% endblock %}  
+    </div> 
+</body> 
+</html>
